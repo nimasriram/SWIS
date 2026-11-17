@@ -1,0 +1,32 @@
+/* Colour tokens + light/dark mode. Change colours here first.
+   Mode is set by <html data-theme="light|dark"> (toggle in the header, remembered in localStorage).
+   Brand: UTD green #154734 and UTD orange #E87500. */
+:root {
+  color-scheme: light;
+  --bg:#eef1ee;   --pn:#ffffff;  --pn2:#f3f6f3;
+  --ink:#101714;  --mut:#566259; --ln:#d5dcd7;
+  --hdr:#154734;  --acc:#e87500; --acc-ink:#1a1100;
+  --rd:#d92d20;   --rdbg:rgba(217,45,32,.10);
+  --gn:#12873f;   --gnbg:rgba(18,135,63,.12);
+  --am:#b45309;   --ambg:rgba(180,83,9,.12);
+  --bl:#2563eb;
+  --t-med:#d1304f; --t-fire:#d9590b; --t-saf:#2563eb;
+  /* map */
+  --map:#e6ece1; --lawn:#d6e3cd; --road:#f7f4ea; --roadln:#c9d0c3;
+  --bldg:#ffffff; --bldgln:#b9c3bc; --shadow:rgba(16,23,20,.14);
+  --elev:0 10px 30px rgba(16,23,20,.22);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg:#080d0b;   --pn:#101915;  --pn2:#16221c;
+  --ink:#eef4f0;  --mut:#93a49a; --ln:#24352c;
+  --hdr:#0c2c20;  --acc:#ff9f2e; --acc-ink:#1a1100;
+  --rd:#ff5247;   --rdbg:rgba(255,82,71,.14);
+  --gn:#3ddc84;   --gnbg:rgba(61,220,132,.14);
+  --am:#ffb454;   --ambg:rgba(255,180,84,.14);
+  --bl:#6ea4ff;
+  --t-med:#ff6b86; --t-fire:#ff9a3d; --t-saf:#6ea4ff;
+  --map:#0f1813; --lawn:#14231b; --road:#27382f; --roadln:#3b5347;
+  --bldg:#1d2e26; --bldgln:#4d6b5d; --shadow:rgba(0,0,0,.5);
+  --elev:0 14px 38px rgba(0,0,0,.6);
+}
